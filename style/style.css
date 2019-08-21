@@ -1,0 +1,474 @@
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: ropejumping;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(248, 210, 48);
+    z-index: 100;
+    transition: all .5s;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color .5s, padding .5;
+}
+
+header ul li a:hover,
+header ul li.active a {
+    color: #e6e6e6;
+    text-decoration-line: underline;
+    font-size: 21px;
+    transition: all .5s;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
+}
+
+.lp-content {
+    background-color: lightgray;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-family: ropejumping;
+    text-align: center;
+    color: white !important;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
+    margin-bottom: 10px;
+}
+
+footer #label {
+    width: 100%;
+    font: 20px;
+    background-color: rgb(248, 210, 48);
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.owl-dots button.owl-dot {
+    display: inline-block;
+    padding: 0 10px !important;
+    opacity: 0.75;
+}
+
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.owl-dots button.owl-dot span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ddcfcf;
+    border-radius: 100%;
+    transition: background-color 0.25s;
+}
+
+.owl-dots button.owl-dot.active span {
+    background: black;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    top: 50%;
+    margin-top: -20px;
+    border-radius: 100%;
+    text-align: center;
+    opacity: 0.75;
+    transition: opacity 0.25s;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+    opacity: 0.75;
+}
+
+.owl-carousel .owl-nav button.owl-prev:focus,
+.owl-carousel .owl-nav button.owl-next:focus {
+    outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: 25px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: 25px;
+}
+
+.owl-carousel .owl-nav button.owl-prev i,
+.owl-carousel .owl-nav button.owl-next i {
+    color: #1d1c1a;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.lp-popup {
+    border-radius: 2px;
+    position: relative;
+    background: #FFF;
+    padding: 5px;
+    width: auto;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+@font-face {
+    font-family: ropejumping;
+    src: url(/webfonts/ropejumping.ttf);
+}
+
+#label {
+    font-family: ropejumping;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    color: black;
+    width: 270px;
+    padding: 5px 5px;
+    margin: 10px 10px 10px 10px;
+    background: #ccc;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: rgb(248, 210, 48);
+    border: 1px solid black;
+    background-color: rgb(248, 210, 48);
+    color: white;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
+    transition: all .25s;
+}
+
+.map {
+    height: 350px;
+    width: 100%;
+}
+
+.wi-fb.wi-fb-theme .wi-fb-btn button {
+    color: black;
+    width: 270px;
+    padding: 5px 5px;
+    margin: 10px 10px 10px 10px;
+    background: #ccc;
+    border: 1px solid #6d6d6d;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.wi-fb.wi-fb-theme .wi-fb-btn button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: rgb(248, 210, 48);
+    border: 1px solid black;
+    background-color: rgb(248, 210, 48);
+    color: white;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
+    transition: all .25s;
+}
+
+input,
+textarea {
+    border: 1px solid gray !important;
+    border-radius: 5px !important;
+}
+
+input:focus,
+textarea:focus {
+    border-color: black !important;
+    transition: all .5s;
+}
+
+.feadback {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 250, 205, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.feadback img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #6d6d6d;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.owl-item .feadback {
+    margin: 5px;
+}
+
+.feadback div {
+    text-align: center;
+    margin: 0 5px 5px auto;
+}
+
+#feadback .owl-carousel .owl-nav button.owl-prev,
+#feadback .owl-carousel .owl-nav button.owl-next {
+    margin-top: -80px;
+}
+
+q {
+    font-style: italic;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    text-align: justify;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+.col-sm-3 div {
+    margin: 0 auto;
+    font-style: italic;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: justify;
+    box-shadow: 0 0 50px lemonchiffon;
+    padding: 5px;
+    margin: 5px;
+}
+
+.col-sm-3 a {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+ul.wi-fb-line{
+    margin: 0;
+    padding: 0;
+}
+
+.star {
+    font-size: 40px;
+    color: black;
+    display: inline;
+    cursor: pointer;
+}
+
+.fb-star {
+    font-size: 40px;
+    color: black;
+    display: inline;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    text-shadow: 1px 0 1px rgba(255, 255, 0, 0.5),
+        0 1px 1px rgba(255, 255, 0, 0.5),
+        -1px 0 1px rgba(255, 255, 0, 0.5),
+        0 -1px 1px rgba(255, 255, 0, 0.5);
+    color: rgba(255, 255, 0, 0.1);
+    transition: color .25s;
+}
+
+.marked {
+    color: orange;
+    text-shadow: 0 0 10px rgb(255, 255, 0);
+    transition: color .5s;
+}
+
+.row-flex,
+.row-flex span {
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#foto span {
+    font-family: ropejumping;
+    color: white;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
+    text-align: center;
+    margin-top: 25%;
+}
+
+#contact .col-sm-6{
+   width: 90%; 
+}
+
+#contact ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul.img li {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#contact img {
+    width: 10%;
+}
+
+#contact .img img {
+    width: 15%;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#contact .img img:hover {
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 10px yellow;
+}
+
+.phone {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: fantasy;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 0 1px #000,
+        0 1px 1px #000,
+        -1px 0 1px #000,
+        0 -1px 1px #000;
+    text-align: center;
+}
+
+.phone ul li{
+    padding: 15px;
+}
+
+video,
+video:focus {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+video{
+   object-fit: inherit;
+}
+
+.row-flex .album {
+    width: 48%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width : 284px) {
+    #slideshow .container {
+        margin-top: 134px;
+    }
+}
+
+@media (min-width : 285px) and (max-width : 527px) {
+    #slideshow .container {
+        margin-top: 97px;
+    }
+        .col-sm-6 {
+        min-width: 350px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width : 528px) {
+    #slideshow .container {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 750px) {
+    .row-flex {
+        padding: 0px;
+    }
+
+    .row-flex .album {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width : 575px) and (max-width : 1215px) {
+    .col-sm-3 {
+        min-width: 450px;
+    }
+
+    .col-sm-6 {
+        min-width: 350px;
+        margin: 0 auto;
+    }
+}
