@@ -1,8 +1,8 @@
 @font-face {
     font-family: "ropejumping";
-    src: url(webfonts/ropejumping.eot?) format("eot"),
-         url(webfonts/ropejumping.woff) format("woff"),
-         url(webfonts/ropejumping.ttf) format("truetype");
+    src: url(../webfonts/ropejumping.eot?) format("eot"),
+         url(../webfonts/ropejumping.woff) format("woff"),
+         url(../webfonts/ropejumping.ttf) format("truetype");
 }
 
 body {
