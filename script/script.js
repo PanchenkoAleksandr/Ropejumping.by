@@ -3,7 +3,7 @@
 
 //Плавный scroll по клику                      
         var LpNav = $('header ul');
-        LpNav.find('li a').on('click',  (event) => {
+        LpNav.find('li a').on('click',  function(event){
             let trgtSelector = $(this).attr('href');
             let linkTrgt = $(trgtSelector);
             if (linkTrgt.length > 0) {
@@ -58,7 +58,7 @@
                     $('.col-sm-9 .feadback').eq(i).append('<q>' + item.text + '</q>');
                     $('.col-sm-9 .feadback').eq(i).append('<div id="' + i + '" class="wi-fb-line"><ul class="wi-fb-line"><li class="fb-star">&#9734;</li><li class="fb-star">&#9734;</li><li class="fb-star">&#9734;</li><li class="fb-star">&#9734;</li><li class="fb-star">&#9734;</ul></div>');
 
-                    $('#' + i + ' .fb-star').each( () => {
+                    $('#' + i + ' .fb-star').each( function() {
                         if ($(this).index() < item.mark) {
                             $(this).addClass('marked');
                         }
@@ -85,23 +85,23 @@
             }
         
 //Подстраиваем высоту блока под максимальную высоту блока
-        let feadBackAutoHeight = () => {
+        let feadBackAutoHeight = function() {
             let fh = $('#feadback .feadback'),
                 maxHeight = 0;
 
-            fh.each( (i) => {
+            fh.each( function(i) {
                 if(maxHeight <= $(this).outerHeight()){
                     maxHeight = $(this).outerHeight();
                 }
             });
 
-            fh.each( (i) => {
+            fh.each( function(i) {
                 $(this).outerHeight(maxHeight);
             });  
         }
 
 //Загрузка отзывов из JSON в LocaleStorage       
-        let loadFeadBack = () => {
+        let loadFeadBack = function() {
             feadbacks = JSON.parse(localStorage.getItem("feadbacks"));
             if (!feadbacks) {
                 $.ajax({
@@ -239,10 +239,10 @@
         }
 
 //Выставление оценки по клику на звезду
-        let mark = 0;
-        $('ul.wi-fb-line li').on('click',  () => {
+        var mark = 0;
+        $('ul.wi-fb-line li').on('click', function() {
             mark = $(this).attr('data-mark');
-            $('.star').each( () =>{
+            $('.star').each( function() {
                 if ($(this).attr('data-mark') <= mark) {
                     $(this).addClass('marked');
                 }
@@ -253,7 +253,7 @@
         });
 
 //Добавление отзыва        
-        $('button#fb-add').on('click', () =>{
+        $('button#fb-add').on('click', () => {
 
             let fb = {},
                 currentDate = new Date;

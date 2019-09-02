@@ -11,12 +11,12 @@
 
         let params = $.extend(defaultParams, userParams);
 
-        return $(this).each( () => {
+        return $(this).each( function() {
 
             let tabs = $(this),
                 tabsTitlesNames = [];
             tabs.addClass('lp-tabs');
-            tabs.children().each( () => {
+            tabs.children().each( function() {
                 tabsTitlesNames.push($(this).attr('title'));
             }).addClass('lp-tab');
 
@@ -52,7 +52,7 @@
             tabsContent.height(tabsContent.find('.active').outerHeight());
 
 //Добавляем в обработчик выбранное пользователем событие
-            tabsTitlesItems.on(params.event, () => {
+            tabsTitlesItems.on(params.event, function() {
 
                 if (!tabs.hasClass('changing')) {
                     tabs.addClass('changing');
