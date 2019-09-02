@@ -276,7 +276,7 @@
         });
         
 //Очистка поля для ввода
-        $('button.mfp-close').on('click',  () => {
+        $('button.mfp-close').on('click', () => {
             mark = 0;
             console.log(mark);
             $('.star.marked').removeClass('marked');
@@ -290,7 +290,7 @@
         });
 
 //Всплывающие окна для слайдера альбомов
-        $('.lp-gallery').each( () => {
+        $('.lp-gallery').each( function() {
             $(this).magnificPopup({
                 delegate: 'a',
                 type: 'image',
