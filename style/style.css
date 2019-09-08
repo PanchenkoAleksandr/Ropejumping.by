@@ -60,6 +60,10 @@ header ul li.active a {
         0 -1px 1px #000;
 }
 
+#slideshow img{
+    width: 100%;
+}
+
 .lp-content {
     background-color: lightgray;
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -163,11 +167,6 @@ footer #label {
     margin: 10px auto;
 }
 
-@font-face {
-    font-family: ropejumping;
-    src: url(/webfonts/ropejumping.ttf);
-}
-
 #label {
     font-family: ropejumping;
     font-size: 20px;
@@ -177,6 +176,11 @@ footer #label {
         -1px 0 1px #000,
         0 -1px 1px #000;
     text-align: center;
+}
+
+.col-sm-3.owl-item .button{
+    background-color: white;
+    border: 1px solid black;
 }
 
 .button {
@@ -192,6 +196,7 @@ footer #label {
     cursor: pointer;
 }
 
+.col-sm-3.owl-item .button:hover,
 .button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: rgb(248, 210, 48);
@@ -293,9 +298,10 @@ q {
     border: 1px solid grey;
     border-radius: 5px;
     text-align: justify;
-    box-shadow: 0 0 50px lemonchiffon;
     padding: 5px;
     margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 250, 205, 0.8);
 }
 
 .col-sm-3 a {
@@ -376,11 +382,11 @@ ul.img li {
 }
 
 #contact img {
-    width: 10%;
+    width: 15%;
 }
 
 #contact .img img {
-    width: 15%;
+    width: 100%;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 1px solid black;
